@@ -13,31 +13,6 @@ body, #unions {
     font-weight: bold;
 }
 
-.action-buttons {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 1rem;
-    z-index: 1000;
-}
-.action-buttons .button-pill {
-    padding: 0.5rem;
-    border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
-}
-.button-pill {
-    border: 1px solid black;
-    background-color: white;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-.button-pill img {
-    width: 1.5rem;
-}
-
 .popup {
     display: none;
 

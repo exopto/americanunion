@@ -31,7 +31,7 @@
         },
         {
             "Name": "Calidum Union",
-            "Rep. Ratio": 100000,
+            "Rep. Ratio": 50000,
             "Leader": "John Sith",
             "Reserve": 1.72,
             "Reps.": "2,820",
@@ -169,12 +169,12 @@
         },
         {
             "Name": "West Cogitium",
-            "Leader": "Gilbert Saxe",
+            "Leader": "Gilbert",
             "Wealth": 0.39,
             "Citizens": 3,
             "Military": "No military, but has amazing tech and also can use 1/6 of Gametopia's military.",
             "Location/Land": "Western Texas.",
-            "Other Information": "Split of Gametopia after there were many tensions due to the arrival of\u00a0Trridiv Sivakumar, as described in\u00a0DGD-I CO.C21JT - TENSIONS IN COGITIUM",
+            "Other Information": "Split of Gametopia after there were many tensions due to the arrival of\u00a0Trridiv Sivakumar, as described in\u00a0DGD-I CO.C21JT - TENSIONS IN COGITIUM. Gilbert",
             "Affiliation": "American Union (Partial)",
             "Background Color": "#53D4FF"
         },
@@ -318,7 +318,7 @@
             "Citizens": 4,
             "Military": "Describe the military of this nation. It may be subjective, and it should be qualitative.",
             "Location/Land": "Northeastern Siberia.",
-            "Other Information": "Very traditional. Very cold. Lots of trees. Currently extremely poor.",
+            "Other Information": "Split from Jonah's Colony after the Great Collapse of Feburary 26th, 2026. Very traditional. Very cold. Lots of trees. Currently extremely poor.",
             "Background Color": "#74a6cc"
         },
         {
@@ -329,7 +329,7 @@
             "Citizens": 10,
             "Military": "Describe the military of this nation. It may be subjective, and it should be qualitative.",
             "Location/Land": "Southeastern Siberia.",
-            "Other Information": "Means \"forest land\".",
+            "Other Information": "Split from Jonah's Colony after the Great Collapse of Feburary 26th, 2026. Means \"forest land\".",
             "Background Color": "#d186c6"
         },
         {
@@ -339,7 +339,7 @@
             "Citizens": 75,
             "Military": "Sub-Jonah military. Military conscription and drafting is the top priority here.",
             "Location/Land": "Central Asia.",
-            "Other Information": "Very openly a dictatorship led by the Great Chairman Joe Nah, who emposes strict rules in order to \"ensure development\".",
+            "Other Information": "Split from Jonah's Colony after the Great Collapse of Feburary 26th, 2026. Very openly a dictatorship led by the Great Chairman Joe Nah, who emposes strict rules in order to \"ensure development\".",
             "Affiliation": "PWACIS",
             "Background Color": "#ff976b"
         },
@@ -350,8 +350,8 @@
             "Wealth": 6.7,
             "Citizens": 54,
             "Military": "Describe the military of this nation. It may be subjective, and it should be qualitative.",
-            "Location/Land": "Non-subtropical China.",
-            "Other Information": "Name was made by the first president,\u00a0Ploquic Sith, 2nd cousin once removed of John Sith. Not part of the Calidum Union.",
+            "Location/Land": "Non-subtropical China as well as Mongolia.",
+            "Other Information": "Split from Jonah's Colony after the Great Collapse of Feburary 26th, 2026. Name was made by the first president,\u00a0Ploquic Sith, 2nd cousin once removed of John Sith. Not part of the Calidum Union.",
             "Background Color": "#e69767"
         },
         {
@@ -403,22 +403,11 @@
             "Leader": "Draco Riley",
             "Wealth": 1.43,
             "Citizens": 4,
-            "Military": "Small military currently. Developing navy and trying to tame Gilbert.",
+            "Military": "Modern military. Developing AI weapons.",
             "Location/Land": "California except for southern coastal counties. The island of Little Saint James is not in this nation, despite the name.",
             "Other Information": "Created after Arjun conquered Jonah, making this nation part of PWACIS. Popular tourist destination because of its redwoods and sequoias. Gilbert resides in Little Saint James. Pays 5% taxes to Arjun.",
             "Affiliation": "PWACIS",
             "Background Color": "#B6D7A8"
-        },
-        {
-            "Name": "Siddartha",
-            "Leader": "Chai Manna",
-            "Wealth": 1.28,
-            "Citizens": 16,
-            "Military": "Modern military, with war monkeys!",
-            "Location/Land": "Kalimantan, Thailand, and Myanmar.",
-            "Other Information": "Created after Arjun conquered Jonah, making this nation part of PWACIS. Pays 10% taxes to Arjun.",
-            "Affiliation": "PWACIS",
-            "Background Color": "#B4A7D6"
         },
         {
             "Name": "Chola Republic",
@@ -449,14 +438,14 @@
             "Wealth": 2.55,
             "Citizens": 48,
             "Military": "Uses the Calidum Union military as its own.",
-            "Location/Land": "Northeast Africa down to the middle.",
+            "Location/Land": "Northeast Africa down to the central region, including the horn.",
             "Other Information": "Part of the Calidum Union and PWAICS.",
             "Background Color": "#FBDB7B"
         },
         {
             "Name": "Middle Calidum",
             "Rep. Ratio": 100000,
-            "Leader": "[REDACTED]",
+            "Leader": "[REDCTED]",
             "Wealth": 3.38,
             "Citizens": 80,
             "Military": "Uses the Calidum Union military as its own.",
@@ -586,7 +575,7 @@
             "Background Color": "#15A962"
         },
         {
-            "Name": "New \u00c6volo\u00a0",
+            "Name": "New \u00c6volo",
             "Rep. Ratio": 100000,
             "Leader": "Bereket Anna",
             "Wealth": 2.79,
@@ -595,7 +584,18 @@
             "Location/Land": "In Africa, south of Bun Pik.",
             "Other Information": "Quite different from the old, more corrupt, \u00c6volo, having a Non-Empire based culture and government.",
             "Background Color": "#23C4AA"
+        },
+        {
+            "Rep. Ratio": 100000,
+            "Background Color": "#8FD9FB",
+            "Name": "T\u00eft\u00fck\u00fcn\u00e4m\u00e1n\u00edt-\u0105kl\u00e6ap\u00fc\u00fc\u0105t\u1ecd\u1ecd",
+            "Leader": "Dequavius Johnson",
+            "Wealth": 0.08,
+            "Citizens": 1,
+            "Military": "Very small military with weapons including rocks, sticks, and spears. ",
+            "Location/Land": "The southernmost area of Africa.",
+            "Other Information": "The least developed country, with no structures, government, law, or religion of any kind.  Known for having lots of cats."
         }
     ],
-    "last_edit": 1771944295.1934736
+    "last_edit": 1772204422.0806513
 }

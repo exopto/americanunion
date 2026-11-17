@@ -45,7 +45,8 @@ export function deleteOrPaintRows(rowClicked, cellInfoList) {
     rowSelectInfo["mode"] = false;
 
     if (rowSelectInfo["type"] === "delete-row") {
-        fetch(`/stats/delete/${cellInfoList["Table"]}/${cellInfoList["ID"]}`, {method: 'DELETE'})
+        recentEdits += [rowClicked, cellInfoList]
+        sendUpdatedCells({endpoint: `/stats/delete/${cellInfoList["Table"]}/${cellInfoList["ID"]}`, method: "DELETE"})
         rowClicked.remove()
     } else if (rowClicked.closest("section").id === "nations") {
         document.querySelector("#repaint").style.display = "block";
@@ -56,13 +57,18 @@ export function deleteOrPaintRows(rowClicked, cellInfoList) {
         canvas_for_color_hex.remove()
 
         document.querySelector("#repaint-submit").addEventListener("click", function() {
+
             document.querySelector("#repaint").style.display = "none";
 
             const submittedHexValue = document.querySelector("#repaint-hex").value.replace("#", "")
+            recentEdits += [rowClicked, submittedHexValue]
             
             rowClicked.style.backgroundColor = `#${submittedHexValue}`
             
-            sendUpdatedCells(`{"${cellInfoList["ID"]} Nations Background": "#${submittedHexValue}"}`);
+            sendUpdatedCells({method: "PUT", 
+                              body: `{"${cellInfoList["ID"]} Nations Background": "#${submittedHexValue}"}`,
+                              originalData: rowClicked.firstChild
+                            });
 
         }, {once: true})
 
@@ -73,4 +79,15 @@ export function deleteOrPaintRows(rowClicked, cellInfoList) {
         document.querySelector("#action-instructions").style.display = "block";
         rowSelectInfo["mode"] = true;
     }
+}
+
+
+
+export function activateUndoOrRedoButtons(event) {
+    const buttonPressed = event.target.closest(".button-pill")
+    if (buttonPressed.id === "undo") {
+
+    } else if (buttonPressed.id === "redo") {
+    }
+
 }

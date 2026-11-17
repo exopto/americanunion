@@ -58,8 +58,8 @@ def format_cell_data(colony_stats, new_cell_data, entity_index, entity_type, col
                                     union["Partial Members"][union["Partial Members"].index(nation["Name"])] = new_cell_data
                             break
 
-                # new_cell_data = fix_duplicate_names(new_cell_data, 1, colony_stats[entity_type])
-                # print(time(), "LEINDEDO")
+                new_cell_data = fix_duplicate_names(new_cell_data, 1, colony_stats[entity_type])
+                print(time(), "LEINDEDO")
             case "Reserve" | "Wealth":
                 new_cell_data = keep_digits(new_cell_data, float_allowed=True)
             case "Reps.":

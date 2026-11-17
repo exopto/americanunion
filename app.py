@@ -12,6 +12,10 @@ import logging
 app = Flask(__name__)
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 
+CLIENT_ID = os.environ["GITHUB_CLIENT_ID"]
+CLIENT_SECRET = os.environ["GITHUB_CLIENT_SECRET"]
+APP_URL = os.environ["APP_URL"]
+
 # ---------
 # WEB PAGES ----
 # ---------

@@ -1,4 +1,6 @@
 # The American Union Official Website
+## NOTE: I HAVE NOT BEEN WORKING ON THIS PROJECT SINCE FEBRUARY 2026 AND IT IS ON INDEFINITE HIATUS. WHILE I STILL DO HAVE HYPOTHETICAL PLANS FOR THIS REPO, I HAVE MOVED ONTO OTHER PROJECTS RATHER THAN GETTING BOGGED DOWN IN MAINTAINING A SITE IN A LANGUAGE I DON'T EVEN WRITE MUCH ANYMORE. THIS BRANCH CONTAINS THE FINAL IN-PROGRESS CHANGES I MADE BEFORE ABANDONING THE PROJECT.
+
 A website I am making for the fictional American Union that has been constructed on Google Docs over the past year. Made using Flask and a good amount of other backend Python that integrades with it, as well as HTML, CSS, and JS of course. Uses JSON for the stats data. Still a work in progress!
 
 ## Current Features

@@ -20,10 +20,14 @@
     <span id="total-stats">Total Assets: {{total_wealth}} | Total Population: {{total_population}}</span>
     <br><br>
 
-    <div class="action-buttons">
+    <div class="action-buttons" id="delete-repaint">
         <button class="button-pill" id="delete-row"><img src="/static/images/icons/trash.svg"></button>
         <button class="button-pill" id="paint-row"><img src="/static/images/icons/brush.svg"></button>
         <!-- <button class="button-pill"><img src="/static/images/sliders.svg"></button> -->
+    </div>
+    <div class="action-buttons" id="undo-redo">
+        <button class="button-pill" id="undo"><img src="/static/images/icons/undo.svg"></button>
+        <button class="button-pill" id="redo"><img src="/static/images/icons/redo.svg"></button>
     </div>
 
     <div class="button-pill popup" id="action-instructions">Click on a row to delete it.</div>

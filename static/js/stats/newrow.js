@@ -1,4 +1,4 @@
-import {addUpdatedCell, sendUpdatedCells, getCellInfo, unions_columns, nations_columns} from './globals.js';
+import {sendUpdatedCells, getCellInfo, unions_columns, nations_columns} from './globals.js';
 
 export function createNewRow(cellToEdit, locationClicked) {
     console.log(locationClicked)
@@ -46,6 +46,6 @@ export function createNewRow(cellToEdit, locationClicked) {
         newRowInfo[rowIdentifier][column] = columnDefaults[column];
     }
 
-    navigator.sendBeacon("/stats/new", JSON.stringify(newRowInfo));
+    sendUpdatedCells({endpoint: "/stats/new", method: "POST", body: JSON.stringify(newRowInfo)});
 }
 

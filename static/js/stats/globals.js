@@ -1,4 +1,5 @@
-let cellsEdited = new Map();
+export let recentEdits = [];
+
 export let rowSelectInfo = {"mode": false, "type": ""}
 export const unions_columns = ["Name", "Leader", "Reserve", "Reps.", "Military", "Land", "Members", "Other"];
 export const nations_columns = ["Name", "Leader", "Wealth", "Citizens", "Military", "Location/Land", "Other"];
@@ -17,20 +18,20 @@ export function getCellInfo(cell) {
     return cellInfoList;
 }
 
-export function addUpdatedCell(cellToEdit) {
-    cellToEdit.removeAttribute("contenteditable");
-    cellToEdit.removeAttribute("spellcheck");
+export function sendUpdatedCells({endpoint="/stats/save", method="PUT", body, originalData} = {}) {
+    const recentEditKey = `${method} ${endpoint}`
+    recentEdits += [recentEditKey, body] // TODO
+    originalData
 
-    cellsEdited.set(Object.values(getCellInfo(cellToEdit)).join(" "), cellToEdit.textContent);
-}
 
-export function sendUpdatedCells(body=JSON.stringify(Object.fromEntries(cellsEdited))) {
-    fetch("/stats/save", {
-        method: 'PUT', 
-        headers: {'Content-Type': 'application/json; charset=UTF-8'}, 
-        body: body
-    })
-    .catch((error) => {console.error('Error:', error)});
-
-    cellsEdited.clear();
+    dataToPass = {method: method}
+    if (method != "DELETE") {
+        dataToPass += {
+            headers: {'Content-Type': 'application/json; charset=UTF-8'}, 
+            body: body
+        }
+    }
+    
+    fetch(endpoint, dataToPass).catch((error) => {console.error('Error:', error)});
+   
 }
